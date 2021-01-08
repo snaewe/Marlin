@@ -180,13 +180,13 @@
     #define BTN_EN2          10
     #define BTN_ENC          16
     #ifndef ST7920_DELAY_1
-      #define ST7920_DELAY_1 DELAY_NS(0)
+      #define ST7920_DELAY_1 DELAY_NS(150)
     #endif
     #ifndef ST7920_DELAY_2
-      #define ST7920_DELAY_2 DELAY_NS(63)
+      #define ST7920_DELAY_2 DELAY_NS(120)
     #endif
     #ifndef ST7920_DELAY_3
-      #define ST7920_DELAY_3 DELAY_NS(125)
+      #define ST7920_DELAY_3 DELAY_NS(150)
     #endif
     #define STD_ENCODER_PULSES_PER_STEP 4
     #define STD_ENCODER_STEPS_PER_MENU_ITEM 1
