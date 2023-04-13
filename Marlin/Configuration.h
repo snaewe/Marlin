@@ -668,9 +668,9 @@
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
     // Artillery Sidewinder X1                             // DIGA-Tech:
-    #define DEFAULT_Kp 14.58                               // DIGA-Tech:
-    #define DEFAULT_Ki  1.14                               // DIGA-Tech:
-    #define DEFAULT_Kd 46.57                               // DIGA-Tech:
+    #define DEFAULT_Kp 14.3036                               // DIGA-Tech:
+    #define DEFAULT_Ki  1.2652                               // DIGA-Tech:
+    #define DEFAULT_Kd 40.4256                               // DIGA-Tech:
 
     //#define DEFAULT_Kp  22.20                            // DIGA-Tech:
     //#define DEFAULT_Ki   1.08                            // DIGA-Tech:
