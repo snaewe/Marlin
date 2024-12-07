@@ -59,4 +59,6 @@
   #define Y_CS_PIN 63
 #endif
 
+#define TEMP_BED_PIN 15
+
 #include "pins_RAMPS.h"
