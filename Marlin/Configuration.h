@@ -1495,11 +1495,11 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 28, -33, 0 }              // DIGA-Tech: probe offset
+#define NOZZLE_TO_PROBE_OFFSET { 28, -15, 0 }              // SKR14T
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define PROBING_MARGIN 10                                  // DIGA-Tech: probe margin
+#define PROBING_MARGIN 20                                  // DIGA-Tech: probe margin
 
 // X and Y axis travel speed (mm/min) between probes
 #define XY_PROBE_FEEDRATE (133*60)                         // DIGA-Tech:
