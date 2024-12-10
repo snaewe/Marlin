@@ -87,7 +87,7 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_MKS_GEN_L                      // DIGA-Tech:
+  #define MOTHERBOARD BOARD_BTT_SKR_V1_4_TURBO                      // SKR14T
 #endif
 
 /**
@@ -98,7 +98,7 @@
  *
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT 0                                      // DIGA-Tech:
+#define SERIAL_PORT -1                                      // SKR14T
 
 /**
  * Serial Port Baud Rate
@@ -111,17 +111,17 @@
  *
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
-#define BAUDRATE 250000                                                        // DIGA-Tech:
+#define BAUDRATE 250000                                                        // SKR14T
 
-#define BAUD_RATE_GCODE     // Enable G-code M575 to set the baud rate         // DIGA-Tech:
+// #define BAUD_RATE_GCODE     // Enable G-code M575 to set the baud rate         // SKR14T
 
 /**
  * Select a secondary serial port on the board to use for communication with the host.
  * Currently Ethernet (-2) is only supported on Teensy 4.1 boards.
  * :[-2, -1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-//#define SERIAL_PORT_2 -1
-//#define BAUDRATE_2 250000   // :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000] Enable to override BAUDRATE
+#define SERIAL_PORT_2 0     // SKR14T
+#define BAUDRATE_2 250000   // :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000] Enable to override BAUDRATE
 
 /**
  * Select a third serial port on the board to use for communication with the host.
@@ -135,7 +135,7 @@
 //#define BLUETOOTH
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Artillery Sidewinder X1"      // DIGA-Tech:
+#define CUSTOM_MACHINE_NAME "Sidewinder X1 SKR 1.4T"      // SKR14T
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -158,12 +158,12 @@
  *          TMC5130, TMC5130_STANDALONE, TMC5160, TMC5160_STANDALONE
  * :['A4988', 'A5984', 'DRV8825', 'LV8729', 'TB6560', 'TB6600', 'TMC2100', 'TMC2130', 'TMC2130_STANDALONE', 'TMC2160', 'TMC2160_STANDALONE', 'TMC2208', 'TMC2208_STANDALONE', 'TMC2209', 'TMC2209_STANDALONE', 'TMC26X', 'TMC26X_STANDALONE', 'TMC2660', 'TMC2660_STANDALONE', 'TMC5130', 'TMC5130_STANDALONE', 'TMC5160', 'TMC5160_STANDALONE']
  */
-#define X_DRIVER_TYPE  TMC2100                             // DIGA-Tech:
-#define Y_DRIVER_TYPE  TMC2100                             // DIGA-Tech:
-#define Z_DRIVER_TYPE  TMC2100                             // DIGA-Tech:
+#define X_DRIVER_TYPE  TMC2209                             // SKR14T
+#define Y_DRIVER_TYPE  TMC2209                             // SKR14T
+#define Z_DRIVER_TYPE  TMC2209                             // SKR14T
 //#define X2_DRIVER_TYPE A4988
 //#define Y2_DRIVER_TYPE A4988
-#define Z2_DRIVER_TYPE TMC2100                             // DIGA-Tech:
+#define Z2_DRIVER_TYPE TMC2209                             // SKR14T
 //#define Z3_DRIVER_TYPE A4988
 //#define Z4_DRIVER_TYPE A4988
 //#define I_DRIVER_TYPE  A4988
@@ -172,8 +172,8 @@
 //#define U_DRIVER_TYPE  A4988
 //#define V_DRIVER_TYPE  A4988
 //#define W_DRIVER_TYPE  A4988
-#define E0_DRIVER_TYPE TMC2100                             // DIGA-Tech:
-//#define E1_DRIVER_TYPE A4988
+#define E0_DRIVER_TYPE TMC2209                             // SKR14T
+#define E1_DRIVER_TYPE TMC2209
 //#define E2_DRIVER_TYPE A4988
 //#define E3_DRIVER_TYPE A4988
 //#define E4_DRIVER_TYPE A4988
@@ -1306,7 +1306,7 @@
  *      - normally-closed switches to GND and D32.
  *      - normally-open switches to 5V and D32.
  */
-#define Z_MIN_PROBE_PIN 19 // Pin 32 is the RAMPS default            // DIGA-Tech: use Z max endstop (19)
+// #define Z_MIN_PROBE_PIN 32 // Pin 32 is the RAMPS default            // SKR14T
 
 /**
  * Probe Type
@@ -1652,9 +1652,9 @@
 // @section motion
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR false                                 // DIGA-Tech:
-#define INVERT_Y_DIR false                                 // DIGA-Tech:
-#define INVERT_Z_DIR true                                  // DIGA-Tech:
+#define INVERT_X_DIR true                                 // SKR14T
+#define INVERT_Y_DIR true                                 // SKR14T
+#define INVERT_Z_DIR false                                  // SKR14T
 //#define INVERT_I_DIR false
 //#define INVERT_J_DIR false
 //#define INVERT_K_DIR false
@@ -1665,7 +1665,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false                                // DIGA-Tech:
+#define INVERT_E0_DIR true                                // SKR14T
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
