@@ -60,7 +60,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(DIGA-Tech, ASWX1 v1.0)" // Who made the changes.        // DIGA-Tech:
+#define STRING_CONFIG_H_AUTHOR "(Based on DIGA-Tech, ASWX1 v1.0)" // Who made the changes.        // DIGA-Tech:
 #define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)        // DIGA-Tech:
 
 /**
@@ -75,7 +75,7 @@
  */
 
 // Show the Marlin bootscreen on startup. ** ENABLE FOR PRODUCTION **
-//#define SHOW_BOOTSCREEN                                  // DIGA-Tech:
+#define SHOW_BOOTSCREEN                                  // SKR14T
 
 // Show the bitmap in Marlin/_Bootscreen.h on startup.
 //#define SHOW_CUSTOM_BOOTSCREEN
@@ -139,7 +139,7 @@
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
-//#define MACHINE_UUID "00000000-0000-0000-0000-000000000000"
+#define MACHINE_UUID "7bb9d349-e887-47d0-8268-73fdc4b561cc"   // SKR14T
 
 // @section stepper drivers
 

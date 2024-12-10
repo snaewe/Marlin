@@ -46,7 +46,7 @@
 /**
  * Defines a generic printer name to be output to the LCD after booting Marlin.
  */
-#define MACHINE_NAME "Artillery Sidewinder X1"                                 // DIGA-Tech:
+#define MACHINE_NAME "Sidewinder X1 BTT SKR 1.4 Turbo"                                 // DIGA-Tech:
 
 /**
  * The SOURCE_CODE_URL is the location where users will find the Marlin Source
