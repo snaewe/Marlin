@@ -1254,7 +1254,7 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-#define CLASSIC_JERK                                       // DIGA-Tech:
+//#define CLASSIC_JERK                                       // DIGA-Tech:
 #if ENABLED(CLASSIC_JERK)
   #define DEFAULT_XJERK  8.0                               // DIGA-Tech:
   #define DEFAULT_YJERK  8.0                               // DIGA-Tech:
